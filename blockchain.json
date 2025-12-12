@@ -1,0 +1,61 @@
+{
+    "chain": [
+        {
+            "index": 0,
+            "timestamp": 1732710287.095466,
+            "transactions": [],
+            "previous_hash": "0",
+            "validator": "Genesis",
+            "nonce": 0,
+            "hash": "9d3250f1dbe6a38b6984360ba0fc9ad3f6e015a34f5ee75978c6b619f93430b4"
+        },
+        {
+            "index": 1,
+            "timestamp": 1732710308.128875,
+            "transactions": [
+                {
+                    "transaction_type": "register",
+                    "product_id": "prod001",
+                    "origin": "Pharma Inc.",
+                    "destination": "Supply Chain",
+                    "timestamp": "2024-11-25"
+                }
+            ],
+            "previous_hash": "9d3250f1dbe6a38b6984360ba0fc9ad3f6e015a34f5ee75978c6b619f93430b4",
+            "validator": "Delegate A",
+            "nonce": 0,
+            "hash": "2d8669311d869a941defae6f90422f40b5d8ae0574db596c284e0a90ea7e20f6"
+        }
+    ],
+    "pending_transactions": [
+        {
+            "transaction_type": "transfer",
+            "product_id": "prod001",
+            "origin": "Supply Chain",
+            "destination": "Health Logistics",
+            "timestamp": 1732710314.362729
+        }
+    ],
+    "stakeholders": {
+        "Pharma Inc.": {
+            "stakeholder_id": 1,
+            "name": "Pharma Inc.",
+            "stakeholder_type": "Certified Manufacturer",
+            "stake": 50
+        },
+        "Health Logistics": {
+            "stakeholder_id": 2,
+            "name": "Health Logistics",
+            "stakeholder_type": "Certified Distributor",
+            "stake": 30
+        }
+    },
+    "delegates": {
+        "Delegate A": {
+            "authority_id": 1,
+            "name": "Delegate A",
+            "votes": 80,
+            "stake": 10
+        }
+    }
+}
